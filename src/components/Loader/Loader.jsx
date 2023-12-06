@@ -1,17 +1,14 @@
-import { BallTriangle } from 'react-loader-spinner';
-import { Container } from './Loader.styled';
+import Container from 'components/Container';
+import { LoaderWrapper, Text } from './Loader.styled';
 
-const Loader = () => {
+function Loader() {
   return (
     <Container>
-      <BallTriangle
-        height="100"
-        width="100"
-        color="tomato"
-        ariaLabel="loading"
-      />
+      <LoaderWrapper>
+        <Text>Loading...</Text>
+      </LoaderWrapper>
     </Container>
   );
-};
+}
 
 export default Loader;
